@@ -1,0 +1,23 @@
+[project]
+name = "weapons-kb"
+version = "0.1.0"
+description = "Weapons knowledge base built from public Ukrainian and Russian Telegram channels (KSE MLOps course project)"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "ruff==0.17.1",
+    "pre-commit==4.3.0",
+]
+
+[tool.uv]
+package = false
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
