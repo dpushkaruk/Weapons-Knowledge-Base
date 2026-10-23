@@ -1,6 +1,10 @@
 # weapons-kb
 
-Information about weapons used in the Russia-Ukraine war is spread across dozens of public Telegram channels that repost, rename and contradict each other. THe miltech Knowledge Base will collect new posts from a fixed list of Ukrainian and Russian channels once a day, uses one trained model with two heads to decide which posts are about weapons, which categories they belong to and which weapon systems they name, and links every mention to one profile per weapon system. A local LLM keeps each profile up to date and a Telegram bot answers questions related to these profiles, citing the posts it used. The desired outcome is a knowledge base that is never more than one day behind the channels and whose every fact can be traced to a post.
+News about military drones (UAVs) is spread across dozens of Telegram channels that repost, rename and contradict each other.
+This project reads public posts from a list of 15 Ukrainian and Russian channels once a day and classifies whether each post is about drones, tagging it with types such as FPV, recon, bomber, middle or deep strike, interceptor and jet-powered.
+Drone mentions are linked to a single profile per drone system, even when channels use different names for it.
+Each profile is a knowledge-base entry that a local LLM keeps up to date, with every source post linked.
+In Lab 5 a Telegram bot agent answers questions from this knowledge base and cites the posts it used.
 
 ## Maturity scorecard
 
